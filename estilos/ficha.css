@@ -1,0 +1,67 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 20px;
+}
+
+h2 {
+  text-align: left;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.empresa-info {
+  margin-left: 20px;
+}
+
+.empresa-info h2 {
+  margin: 0;
+}
+
+.empresa-info p {
+  margin: 0;
+  color: #666;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+th, td {
+  border: 1px solid #888;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #444;
+  color: #fff;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #eee;
+  border-top: 2px solid #999;
+}

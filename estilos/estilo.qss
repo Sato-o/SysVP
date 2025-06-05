@@ -1,0 +1,129 @@
+/* ===== Estilo Geral ===== */
+QWidget {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+QLineEdit, QTextEdit, QComboBox, QSpinBox {
+    background-color: #2b2b2b;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 5px;
+    color: #f0f0f0;
+}
+
+QPushButton {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    padding: 8px;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #444;
+}
+
+QTableWidget {
+    background-color: #3a3a3a;
+    border: 1px solid #444;
+    gridline-color: #555;
+}
+
+QHeaderView::section {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+    padding: 4px;
+    border: 1px solid #555;
+}
+
+QScrollBar:vertical {
+    background: #222;
+    width: 8px;
+    margin: 2px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #555;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+/* ===== Calendário Estilizado ===== */
+QCalendarWidget#MeuCalendario {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QCalendarWidget#MeuCalendario QToolButton {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 4px;
+}
+
+QCalendarWidget#MeuCalendario QToolButton::menu-indicator {
+    image: none;
+}
+
+QCalendarWidget#MeuCalendario QToolButton#qt_calendar_prevmonth,
+QCalendarWidget#MeuCalendario QToolButton#qt_calendar_nextmonth {
+    qproperty-icon: none;
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+/* Grade dos dias */
+QCalendarWidget#MeuCalendario QAbstractItemView {
+    background-color: #1e1e1e;
+    color: white;
+    selection-background-color: #ff4444;
+    selection-color: white;
+    border: none;
+    outline: none;
+}
+
+QCalendarWidget#MeuCalendario QAbstractItemView::item:selected {
+    background-color: #ff4444;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+}
+
+QCalendarWidget#MeuCalendario QAbstractItemView::item {
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Linha dos dias da semana */
+QCalendarWidget#MeuCalendario QTableView QHeaderView::section {
+    background-color: #2a2a2a !important;  /* <- cor de fundo forçada */
+    color: #dddddd;
+    font-weight: bold;
+    border: none;
+    padding: 6px;
+}
+
+/* Força fundo da tabela para não ficar branco */
+QCalendarWidget#MeuCalendario QTableView {
+    background-color: #1e1e1e;
+    alternate-background-color: #1e1e1e;
+}
+
+/* Menus internos e spinbox do calendário */
+QCalendarWidget#MeuCalendario QSpinBox,
+QCalendarWidget#MeuCalendario QMenu {
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
